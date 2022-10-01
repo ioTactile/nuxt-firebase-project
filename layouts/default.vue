@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <v-container>
+      <v-container class="container" fluid>
         <Nuxt />
       </v-container>
     </v-main>
@@ -13,3 +13,14 @@ export default {
 
 }
 </script>
+
+<style>
+html {
+  font-family: 'Roboto';
+}
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+</style>
