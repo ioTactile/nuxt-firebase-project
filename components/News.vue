@@ -4,7 +4,7 @@
             <span id="font" class="text-center text-uppercase text-h4 my-6">actualites</span>
         </div>
         <div class="row justify-center">
-            <div v-for="(blog,i) in blogs" :key="i" class="col-md-4 col-12 ">
+            <div v-for="blog in blogs" :key="blog.id" class="col-md-4 col-12 ">
                 <a class="mx-auto" href="/blog" style="text-decoration:none;">
                     <div :style="blog.image"
                         style="background-position:center center; background-size: cover; height: 250px; width:auto;">

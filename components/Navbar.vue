@@ -5,8 +5,8 @@
 
         <div class="spacer"></div>
 
-        <v-btn v-for="button in buttons" :key="button.id" class="bg--text" color="surface" height="inherit" tile
-            depressed>
+        <v-btn v-for="button in buttons" :key="button.id" :to="button.redirection" class="bg--text" color="surface"
+            height="inherit" tile depressed>
             <span>{{button.name}}</span>
         </v-btn>
 
@@ -20,19 +20,19 @@ export default {
             buttons: [
                 {
                     name: 'Accueil',
-                    redirection: '',
+                    redirection: '/',
                 },
                 {
                     name: 'À propos',
-                    redirection: 'presentation'
+                    redirection: '/presentation'
                 },
                 {
                     name: 'La carte',
-                    redirection: 'Carte'
+                    redirection: '/carte'
                 },
                 {
                     name: 'Actualités',
-                    redirection: 'blog'
+                    redirection: '/blog'
                 },
                 {
                     name: 'Contact',

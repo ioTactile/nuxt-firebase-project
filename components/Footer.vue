@@ -1,8 +1,8 @@
 <template>
     <div class="white--text flex text-center" style="background-color:#972b31">
         <div>
-            <v-btn v-for="button in buttons" :key="button.id" class="white--text mt-2" color="footerbtn" rounded
-                depressed>
+            <v-btn v-for="button in buttons" :key="button.id" :to="button.redirection" class="white--text mt-2"
+                color="footerbtn" rounded depressed>
                 <span>{{button.name}}</span>
             </v-btn>
         </div>
@@ -21,27 +21,27 @@ export default {
             buttons: [
                 {
                     name: 'Accueil',
-                    redirection: '',
+                    redirection: '/',
                 },
                 {
                     name: 'À propos',
-                    redirection: 'presentation'
+                    redirection: '/presentation'
                 },
                 {
                     name: 'La carte',
-                    redirection: 'Carte'
+                    redirection: '/carte'
                 },
                 {
                     name: 'Actualités',
-                    redirection: 'blog'
+                    redirection: '/blog'
                 },
                 {
                     name: 'Contact',
-                    redirection: 'contact'
+                    redirection: '/contact'
                 },
                 {
-                    name: 'Mentions légeles',
-                    redirection: 'contact'
+                    name: 'Mentions légales',
+                    redirection: '/mentions-legales'
                 },
             ]
         }
