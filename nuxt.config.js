@@ -23,6 +23,14 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Material+Icons',
+      },
     ],
   },
 
@@ -89,6 +97,8 @@ export default {
           bg: '#ffffff',
           surface: '#7A0B1C',
           hover: '#923745',
+          bgdark: '#000000',
+          footerbtn: '#972b31',
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
